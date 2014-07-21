@@ -8,7 +8,7 @@
 
 echo "\n- [*] - TemplateGenerator - [*] -\n\n";
 
-echo "ProjectName: ";
+echo "PluginName: ";
 $projectName = rtrim(fgets(STDIN));
 @mkdir($projectName);
 
