@@ -2,13 +2,13 @@
 
 /**
  * TemplateGenerator
- * @version 0.0.1
+ * @version 0.0.2
  * @author MinecrafterJPN
  */
 
 echo "\n- [*] - TemplateGenerator - [*] -\n\n";
 
-echo "PluginName: ";
+echo "ProjectName: ";
 $projectName = rtrim(fgets(STDIN));
 @mkdir($projectName);
 
@@ -105,7 +105,7 @@ touch($ymlPath);
 
 $ymlText = "";
 $ymlText .= "name: $projectName\n";
-$ymlText .= "main: $author/$projectName\n";
+$ymlText .= "main: $author\\$projectName\n";
 $ymlText .= "author: $author\n";
 
 if (!empty($authors)) {
